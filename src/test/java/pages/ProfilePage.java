@@ -11,6 +11,7 @@ import java.time.Duration;
 
 public class ProfilePage {
     private WebDriver driver;
+    private int time_delay = 50;
 
     private By logo = By.xpath("//div[contains(@class, 'logo')]");
     private By headOrder = By.xpath("//a[text()='Профиль']");
@@ -23,24 +24,28 @@ public class ProfilePage {
 
     @Step("Нажимаем на логотип")
     public void clickLogo() {
+        new WebDriverWait(driver, Duration.ofSeconds(time_delay))
+                .until(ExpectedConditions.visibilityOfElementLocated(logo));
         driver.findElement(logo).click();
     }
 
     @Step("Нажимаем на кнопку выхода")
     public void clickLogoutButton() {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(time_delay))
                 .until(ExpectedConditions.visibilityOfElementLocated(logoutButton));
         driver.findElement(logoutButton).click();
     }
 
     @Step("Нажимаем на конструктор")
     public void clickConstructorButton() {
+        new WebDriverWait(driver, Duration.ofSeconds(time_delay))
+                .until(ExpectedConditions.visibilityOfElementLocated(constructorButton));
         driver.findElement(constructorButton).click();
     }
 
     @Step("Проверка наличия элемента «Профиль»")
     public boolean findElementHeadOrder() {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(time_delay))
                 .until(ExpectedConditions.visibilityOfElementLocated(headOrder));
         WebElement element = driver.findElement(headOrder);
         if (element != null) {

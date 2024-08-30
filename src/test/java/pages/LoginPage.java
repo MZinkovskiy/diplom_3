@@ -11,6 +11,7 @@ import java.time.Duration;
 
 public class LoginPage {
     private WebDriver driver;
+    private int time_delay = 50;
 
     private By headOrder = By.xpath("//h2[text()='Вход']");
 
@@ -24,22 +25,27 @@ public class LoginPage {
         this.driver = driver;
     }
 
+    @Step("Заполнение поля email")
     public void setEmail(String email) {
         driver.findElement(emailField).sendKeys(email);
     }
 
+    @Step("Заполнение поля password")
     public void setPassword(String password) {
         driver.findElement(passwordField).sendKeys(password);
     }
 
+    @Step("Нажимаем на кнопку «Войти»")
     public void clickLoginButton() {
         driver.findElement(loginButton).click();
     }
 
+    @Step("Нажимаем на кнопку «Зарегистрироваться»")
     public void clickRegistrButton() {
         driver.findElement(registrButton).click();
     }
 
+    @Step("Нажимаем на кнопку «Восстановить пароль»")
     public void clickRecoverPasswordButton() {
         driver.findElement(recoverPasswordButton).click();
     }
@@ -53,7 +59,7 @@ public class LoginPage {
 
     @Step("Проверка наличия элемента «Вход»")
     public boolean findElementHeadOrder() {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(time_delay))
                 .until(ExpectedConditions.visibilityOfElementLocated(headOrder));
         WebElement element = driver.findElement(headOrder);
         if (element != null) {

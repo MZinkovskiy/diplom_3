@@ -9,6 +9,7 @@ import java.time.Duration;
 
 public class RegisterPage {
     private WebDriver driver;
+    private int time_delay = 50;
 
     private By nameField = By.xpath("//fieldset[1]/div/div/input");
     private By emailField = By.xpath("//fieldset[2]/div/div/input");
@@ -21,22 +22,27 @@ public class RegisterPage {
         this.driver = driver;
     }
 
+    @Step("Заполнение поля name")
     public void setName(String name) {
         driver.findElement(nameField).sendKeys(name);
     }
 
+    @Step("Заполнение поля email")
     public void setEmail(String email) {
         driver.findElement(emailField).sendKeys(email);
     }
 
+    @Step("Заполнение поля password")
     public void setPassword(String password) {
         driver.findElement(passwordField).sendKeys(password);
     }
 
+    @Step("Нажимаем на кнопку «Зарегистрироваться»")
     public void clickRegisterButton() {
         driver.findElement(registerButton).click();
     }
 
+    @Step("Заполнение полей регистрации пользователя")
     public void clickLoginButton() {
         driver.findElement(loginButton).click();
     }
@@ -51,7 +57,7 @@ public class RegisterPage {
 
     @Step("Проверка наличия элемента «Некорректный пароль»")
     public boolean findElementPaswordErrorText() {
-        new WebDriverWait(driver, Duration.ofSeconds(5))
+        new WebDriverWait(driver, Duration.ofSeconds(time_delay))
                 .until(ExpectedConditions.visibilityOfElementLocated(paswordErrorText));
         WebElement element = driver.findElement(paswordErrorText);
         if (element != null) {

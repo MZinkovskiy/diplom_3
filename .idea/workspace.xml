@@ -4,26 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5df41575-232d-40cb-a014-60a1ba093219" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/WebDriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/LoginLogoutTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/RegistrTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TransitionsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ForgotPasswordPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/browser.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/yandexdriver.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="5df41575-232d-40cb-a014-60a1ba093219" name="Changes" comment="Add allure report">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Steps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Allure Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Allure Report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Allure Report_files/js" beforeDir="false" afterPath="$PROJECT_DIR$/Allure Report_files/js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/LoginLogoutTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/LoginLogoutTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/RegistrTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RegistrTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TransitionsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TransitionsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ForgotPasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ForgotPasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/RegisterPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,10 +37,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2lEvXIzZE6l6QzjGlQ4QqxZWRFd" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,13 +49,86 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.LoginLogoutTest.executor": "Run",
+    "JUnit.LoginLogoutTest.loginUserMainPage.executor": "Run",
+    "JUnit.LoginLogoutTest.loginUserOnFormRecoveryPassword.executor": "Run",
+    "JUnit.RegistrTest.executor": "Run",
+    "JUnit.TransitionsTest.executor": "Run",
+    "JUnit.TransitionsTest.transitionFromPersonalAccountToConstructor.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "develop3",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/mzink_sznbxnl/Yandex/Diplom/diplom_3/src/test"
+    "last_opened_file_path": "C:/Users/mzink_sznbxnl/Yandex/Diplom/diplom_3"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mzink_sznbxnl\Yandex\Diplom\diplom_3" />
+      <recent name="C:\Users\mzink_sznbxnl\Yandex\Diplom\diplom_3\src\test" />
+      <recent name="C:\Users\mzink_sznbxnl\Yandex\Diplom\diplom_3\src\test\java" />
+      <recent name="C:\Users\mzink_sznbxnl\Yandex\Diplom\diplom_3\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.LoginLogoutTest">
+    <configuration name="LoginLogoutTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginLogoutTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginLogoutTest.loginUserMainPage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="LoginLogoutTest" />
+      <option name="METHOD_NAME" value="loginUserMainPage" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegistrTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RegistrTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransitionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TransitionsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TransitionsTest.transitionFromPersonalAccountToConstructor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="diplom_3" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TransitionsTest" />
+      <option name="METHOD_NAME" value="transitionFromPersonalAccountToConstructor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.LoginLogoutTest" />
+        <item itemvalue="JUnit.TransitionsTest.transitionFromPersonalAccountToConstructor" />
+        <item itemvalue="JUnit.TransitionsTest" />
+        <item itemvalue="JUnit.RegistrTest" />
+        <item itemvalue="JUnit.LoginLogoutTest.loginUserMainPage" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,6 +145,44 @@
       <option name="presentableId" value="Default" />
       <updated>1724758088991</updated>
     </task>
+    <task id="LOCAL-00001" summary="Diplom, part III - Application">
+      <option name="closed" value="true" />
+      <created>1724758476883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1724758476883</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add allure report">
+      <option name="closed" value="true" />
+      <created>1724758549392</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724758549392</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Diplom, part III - Application" />
+    <MESSAGE value="Add allure report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add allure report" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/RegistrTest.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/pages/RegisterPage.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

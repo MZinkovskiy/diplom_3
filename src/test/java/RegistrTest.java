@@ -1,11 +1,8 @@
-import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import pages.LoginPage;
-import pages.MainPage;
 import pages.RegisterPage;
 
 import static org.apache.commons.lang3.RandomStringUtils.randomAlphabetic;
@@ -13,6 +10,8 @@ import static org.junit.Assert.assertTrue;
 
 public class RegistrTest {
     private WebDriver driver;
+
+    Steps steps = new Steps();
 
     @Before
     public void setup() {
@@ -25,18 +24,6 @@ public class RegistrTest {
         driver.quit();
     }
 
-    @Step("Жмем «Личный кабинет» на главной странице")
-    public void clickPersonalAccount() {
-        MainPage mainPage = new MainPage(driver);
-        mainPage.clickPersonalAccountButton();
-    }
-
-    @Step("Жмем «Зарегистрироваться» на странице «Личный кабинет»")
-    public void clickRegistr() {
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.clickRegistrButton();
-    }
-
     @Test
     @DisplayName("Успешная регистрация пользователя")
     public void newUserTrue() {
@@ -44,8 +31,8 @@ public class RegistrTest {
         String emailUser = randomAlphabetic(8) + "@yandex.ru";
         String passwordUser = randomAlphabetic(10);
 
-        clickPersonalAccount();
-        clickRegistr();
+        steps.clickPersonalAccount(driver);
+        steps.clickRegistr(driver);
 
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.fillingRegistrForm(nameUser, emailUser, passwordUser);
@@ -58,8 +45,8 @@ public class RegistrTest {
         String emailUser = randomAlphabetic(8) + "@yandex.ru";
         String passwordUser = randomAlphabetic(5);
 
-        clickPersonalAccount();
-        clickRegistr();
+        steps.clickPersonalAccount(driver);
+        steps.clickRegistr(driver);
 
         RegisterPage registerPage = new RegisterPage(driver);
         registerPage.fillingRegistrForm(nameUser, emailUser, passwordUser);
